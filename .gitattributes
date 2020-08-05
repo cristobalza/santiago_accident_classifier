@@ -1,0 +1,14 @@
+data/BCN/areas_urbanas/*.dbf filter=lfs diff=lfs merge=lfs -text
+data/BCN/areas_urbanas/*.prj filter=lfs diff=lfs merge=lfs -text
+data/BCN/areas_urbanas/*.sbn filter=lfs diff=lfs merge=lfs -text
+data/BCN/areas_urbanas/*.sbx filter=lfs diff=lfs merge=lfs -text
+data/BCN/areas_urbanas/*.shp filter=lfs diff=lfs merge=lfs -text
+data/BCN/areas_urbanas/*.shp.xml filter=lfs diff=lfs merge=lfs -text
+data/BCN/areas_urbanas/*.shx filter=lfs diff=lfs merge=lfs -text
+data/OSM_Chile/chile-latest-free-file/gis_osm_buildings_a_free_1.dbf filter=lfs diff=lfs merge=lfs -text
+data/OSM_Chile/chile-latest-free-file/gis_osm_buildings_a_free_1.shp filter=lfs diff=lfs merge=lfs -text
+data/OSM_Chile/chile-latest-free-file/gis_osm_landuse_a_free_1.shp filter=lfs diff=lfs merge=lfs -text
+data/OSM_Chile/chile-latest-free-file/gis_osm_roads_free_1.dbf filter=lfs diff=lfs merge=lfs -text
+data/OSM_Chile/chile-latest-free-file/gis_osm_roads_free_1.shp filter=lfs diff=lfs merge=lfs -text
+data/CONASET/SiniestrosRM2018/SiniestrosRM2018.dbf filter=lfs diff=lfs merge=lfs -text
+data/CONASET/SiniestrosRM2017/SiniestrosRM2017.dbf filter=lfs diff=lfs merge=lfs -text
