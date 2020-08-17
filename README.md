@@ -33,9 +33,13 @@ Below I'll describe the data used for this project.
 
     This dataset was also obtained from the BCN (same source as the Vector Maps).
 
-- How to navigate your machine Terminal 
+### Prerequisites
 
-- Have installed Anaconda and Jupyter Notebook
+Things you need to know or get installed in your machine in order to recreate this project or do something similar:
+
+- Know how to navigate your machine Terminal 
+
+- Have installed Anaconda package manager and Jupyter Notebooks in your machine.
 
 - Software you need to get installed in your machine:
 
@@ -90,9 +94,18 @@ traitlets==4.3.3
 wcwidth==0.2.5
 ```
 
-However, you can do the following steps to recreate the environment of this project on your machine:
+However, you can do the following steps to recreate the software environment of this project into your machine:
 
-1. 
+1. Create a conda environment. Run the following command in your project directory `conda create —name [YOUR PROJECT ENVIRONMENT] —file requirements.txt`. The `requirements.txt` you can find in the repository and contains the above software and correspoding versions.
+
+2. Activate the environment. Run `conda activate [YOUR PROJECT ENVIRONMENT]`
+
+3. Create a new Kernel in your Jupyter Notebook. First, run `pip install ipykernel` to intall or check if you have installed this package manager in `python -m ipykernel install --user --name [YOUR PROJECT ENVIRONMENT] --display-name "SOME NAME THAT YOU LIKE FOR YOUR KERNEL. E.G.: Python 3.7 (Santiago Project)"`
+
+4. Go to your Terminal and run `jupyter notebook` to open the jupyter notebooks in your local host. Then when you create a new Python file make sure to select the new Kernel created.
+
+The reason of creating a new Anaconda environment and Jupyter Kernel is to have a clean new "workplace" for us to install and uninstall new packages and explore new technologies without messing with other packages that we may have somewhere else in our computers.
+
 
 
 
