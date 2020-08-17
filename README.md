@@ -10,7 +10,7 @@ As the U.S. electric car industry [expands at a very fast rate](https://www.iea.
 
 Below I'll describe the data used for this project.
 
-### Data Sets
+### Data Used 
 
 - **Chile's Vector Maps**: This dataset can be download [here](https://www.bcn.cl/obtienearchivo?id=repositorio/10221/10405/2/Areas_Pobladas.zip). This dataset is a zip file __Vector Maps of Chilean cities__. The zip file contains different data format of 387 cities and towns of the Chilean territory. The data was compiled by the [__Chilean National Congress LIbrary (BCN)__](https://www.bcn.cl/), which is a service of the Chilean Senate and the Chamber of Deputies whose mission is "to contribute to the linking of the National Congress of Chile with citizens, giving access to its legal and historical heritage, and promoting instances of dialogue and reflection between parliamentarians and civil society."
 
@@ -96,22 +96,25 @@ wcwidth==0.2.5
 
 However, you can do the following steps to recreate the software environment of this project into your machine:
 
-1. Create a conda environment. Run the following command in your project directory `conda create —name [YOUR PROJECT ENVIRONMENT] —file requirements.txt`. The `requirements.txt` you can find in the repository and contains the above software and correspoding versions.
+1. Create a conda environment. Run the following command in your project directory `conda create —name [YOUR PROJECT ENVIRONMENT] —file requirements.txt`. The `requirements.txt` you can find in the repository and contains the above software and correspoding versions. The command will create a new environment and it will install all the dependecies written in the `requirements.txt`. That's why it is important that you take a look at that file.
 
 2. Activate the environment. Run `conda activate [YOUR PROJECT ENVIRONMENT]`
 
-3. Create a new Kernel in your Jupyter Notebook. First, run `pip install ipykernel` to intall or check if you have installed this package manager in `python -m ipykernel install --user --name [YOUR PROJECT ENVIRONMENT] --display-name "SOME NAME THAT YOU LIKE FOR YOUR KERNEL. E.G.: Python 3.7 (Santiago Project)"`
+3. Create a new Kernel in your Jupyter Notebook. First, run `pip install ipykernel` to install or check if you have installed this package manager in your machine. Then, run `python -m ipykernel install --user --name [YOUR PROJECT ENVIRONMENT] --display-name "SOME NAME THAT YOU LIKE FOR YOUR KERNEL. E.G.: Python 3.7 (Santiago Project)"`. This will create a new Kernel that will be feed by the packages that live in your new Conda environment.
 
-4. Go to your Terminal and run `jupyter notebook` to open the jupyter notebooks in your local host. Then when you create a new Python file make sure to select the new Kernel created.
+4. Go to your Terminal and run `jupyter notebook` to open the Jupyter notebooks in your local host. Then when you create a new Python file make sure to select the new Kernel created.
 
-The reason of creating a new Anaconda environment and Jupyter Kernel is to have a clean new "workplace" for us to install and uninstall new packages and explore new technologies without messing with other packages that we may have somewhere else in our computers.
-
-
-
+The reason of creating a new Anaconda or Conda environment and Jupyter Kernel is to have a clean new "workplace" for us to install and uninstall new packages and explore new technologies without messing with other packages that we may have somewhere else in our computers.
 
 
 ## Acknowledgments
 
-* Original idea of this project was taken for [How safe are the streets of Santiago?](https://towardsdatascience.com/how-safe-are-the-streets-of-santiago-e01ba483ce4b), an article written by a Chilean Professor who does an exploratory analysis of Santiago's accidents of 2018 using GeoPandas. This project contains a superset of that article's dataset and some snippets of code from the article. However, we have included a much wider and diverse datasets. This disclaimer's purpose is to give credit to the inspiration of this project and by no means this project objective is the same as the article. The intention of this project is to apply the Data Science Lifecycle and Machine Learning  algorithms to make decisions in the future on how we can start thinking in effective policies to prevent deathly car accidents.
+* Original idea of this project was taken for [How safe are the streets of Santiago?](https://towardsdatascience.com/how-safe-are-the-streets-of-santiago-e01ba483ce4b), an article written by a Chilean Professor who does an exploratory analysis of Santiago's accidents of 2018 using GeoPandas. This project contains a superset of that article's dataset and some snippets of code from the article. However, I have included a much wider and diverse datasets. This disclaimer's purpose is to give credit to the inspiration of this project and by no means this project objective is the same as the article. The intention of this project is to apply the Data Science Lifecycle and Machine Learning  algorithms learned in Berkeley to make decisions in the future on how we can start thinking in effective policies to prevent deathly car accidents.
+
+* I watched [this tutorial](https://www.youtube.com/watch?v=h5sy0z2BUTo&t=448s) to help me understand the GeoPandas library functions and code. 
+
+* The Teaching Assistants and Professors in the [Data100/200: Principles and Techniques of Data Science](http://www.ds100.org/fa19/) that helped me during Office Hours by guiding me and giving me different inferences of the results I was encounting throughout the EDA and Algorithm modeling. Also I was helped through the process of installing and learning more about Anaconda and its hidden features.
+
+* [This online book](https://www.textbook.ds100.org/intro) written by By [Sam Lau](https://www.samlau.me/), [Joey Gonzalez](https://people.eecs.berkeley.edu/~jegonzal/), and [Deb Nolan](https://www.stat.berkeley.edu/~nolan/) was a guide for me when I needed to learn more about Classiying Algorithms.
 
 * Use [this template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) to write this documentation
